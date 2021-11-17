@@ -13,6 +13,7 @@ class Autos(models.Model):
 class Ropa(models.Model):
     marca=models.CharField(max_length=200,help_text='Ingrese la marca de Ropa')
     Precio=models.FloatField(help_text='Ingrese el precio')
+    Diseñador=models.FloatField(help_text='Ingrese el nombre del diseñador')
 
 class Pelicula(models.Model):
     Nombre=models.CharField(max_length=200,help_text='Ingrese el nombre de la pelicula')

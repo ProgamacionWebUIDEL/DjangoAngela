@@ -29,7 +29,7 @@ class RopaSerializable(serializers.ModelSerializer):
         fields=(
             'Marca',
             'Precio',
-            'numero_paginas'
+            'Diseñador',
         )
 
 class PeliculaSerializable(serializers.ModelSerializer):
@@ -38,8 +38,7 @@ class PeliculaSerializable(serializers.ModelSerializer):
         fields=(
             'Nombre',
             'Año',
-            'Duracion',
-            'numero_paginas'
+            'Duracion'
         )
 
 class ZapatosSerializable(serializers.ModelSerializer):
@@ -47,6 +46,5 @@ class ZapatosSerializable(serializers.ModelSerializer):
         model:Zapatos
         fields=(
             'Mterial',
-            'Diseño',
-            'numero_paginas'
+            'Diseño'
         )
